@@ -1,0 +1,92 @@
+.bg {
+  background-image: url("https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.bg .container {
+  background-color: #7f8fa6;
+  opacity: 0.9;
+  width: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-family: arial;
+  box-shadow: 2px 20px 30px #353b48;
+}
+.bg .container .info #pinkArrow {
+  color: #e84393;
+}
+.bg .container .info .phone {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.bg .container .info .phone i {
+  align-self: center;
+}
+.bg .container .ranking {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  box-shadow: 2px 20px 30px #353b48;
+}
+.bg .container .ranking .box1 {
+  background-color: #f5f6fa;
+  position: relative;
+}
+.bg .container .ranking .box2 {
+  background-color: #e84393;
+}
+.bg .container .ranking .box1 #profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: 100%;
+  box-shadow: 3px 3px 3px #777;
+  position: absolute;
+  left: 35%;
+  top: -40px;
+}
+.bg .container .ranking .box1 .stars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #f1c40f;
+  margin-top: 50px;
+}
+.bg .container .ranking .box1 textarea {
+  width: 90%;
+  position: absolute;
+  left: 10px;
+  height: 70px;
+  font-style: italic;
+  box-shadow: 1px 2px 10px #353b48;
+}
+.bg .container .ranking .box2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.bg .container .ranking .box2 p {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 5px;
+}
+.bg .container .ranking .box2 i {
+  align-self: flex-end;
+  color: white;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
